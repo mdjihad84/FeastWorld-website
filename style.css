@@ -1,0 +1,128 @@
+/* Header section */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-navber ul {
+    display: inline-flex;
+    gap: 60px;
+}
+.header-navber ul li a:hover {
+    color: orangered;
+    border-bottom: 2px solid white;
+}
+.header-navber ul li {
+    list-style-type: none;
+}
+.header-navber ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: system-ui;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+
+}
+.header-right i{
+    color: white;
+}
+.header-right i:hover {
+    color: orangered;
+}
+
+/* Hero section */
+.food-content {
+    text-align: center;
+}
+.food-content p {
+    font-size: 25px;
+    color: tomato;
+    font-family: sans-serif;
+}
+.food-content h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: system-ui;
+    margin-top: 0px;
+}
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 145px 40px;
+    background: url(./Images/Background-Images/bg-header.jpg);
+}
+.hero-right img{
+    width: 520px;
+    height: 415px;
+}
+.hero-left h3 {
+    color: orange;
+    font-size: 25px;
+    font-family: "Maven Pro", sans-serif;
+}
+.hero-left h2 {
+    color: white;
+    font-size: 84px;
+    width: 526px;
+    margin-top: 0px;
+    font-family: "Maven Pro", sans-serif;
+}
+.btn {
+    color: white;
+    margin-left: 15px;
+    padding: 16px 25px 16px 25px;
+    background-color: rgb(255, 128, 0);
+    text-decoration: none;
+}
+/* Food section */
+.food-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 56px; /* first value = row-gap, second = column-gap */
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 3px 11px 3px;
+    padding: 20px;
+    border-radius: 19px;
+}
+.card img {
+    width: 158px;
+    height: 158px;
+}
+.card h4 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.card h5 {
+    color: grey;
+    margin: -3px;
+    font-size: 16px;
+}
+.card p {
+    font-size: 16px;
+    font-family: "Maven Pro", sans-serif;
+    color: red;
+    font-weight: 800;
+}
+.card:hover {
+    background-color: #fd7e14;
+}
+.card:hover h5,
+.card:hover h4,
+.card:hover p {
+    color: white;
+}
