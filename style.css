@@ -85,10 +85,11 @@
 }
 /* Food section */
 .food-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 64px 56px; /* first value = row-gap, second = column-gap */
+    display: grid;
+    margin: 0 auto;
+    gap: 65px;
+    max-width: 1250px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
