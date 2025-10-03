@@ -39,7 +39,16 @@
 }
 
 /* Hero section */
+.food-container {
+    padding-block: 95px 50px;
+}
+.top-food-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
 .food-content {
+    width: 370px;
     text-align: center;
 }
 .food-content p {
@@ -96,9 +105,11 @@
     width: 250px;
     height: 300px;
     text-align: center;
-    box-shadow: 0px 3px 11px 3px;
+    box-shadow: 0px 0px 4px 1px;
     padding: 20px;
     border-radius: 19px;
+    animation: spinIn 1s ease-out;
+    animation: cardIn 0.8s ease forwards;
 }
 .card img {
     width: 158px;
@@ -126,4 +137,70 @@
 .card:hover h4,
 .card:hover p {
     color: white;
+}
+/* Keyframes */
+@keyframes spinIn {
+  0% {
+    transform: rotate(10deg) scale(0.95);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes cardIn {
+  0% {
+    opacity: 0;
+    transform: rotate(10deg) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+/* card item */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card-content {
+    background: url(./Images/Background-Images/offer-bg.jpg);
+    width: 410px;
+    height: 228px;
+    padding: 41px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-item p{
+    color: red;
+    font-weight: bold;
+}
+.card-item h3{
+    font-size: 30px;
+    width: 194px;
+    color: white;
+    margin: 0;
+}
+.card-item h4{
+    font-weight: 700;
+    font-family: sans-serif;
+    color: rgb(255, 168, 7);
+;
+}
+.card-item a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    font-family: serif;
+}
+.card-food-img img {
+    width: 230px;
 }
