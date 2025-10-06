@@ -167,6 +167,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding-block: 80px;
 }
 .card-content {
     background: url(./Images/Background-Images/offer-bg.jpg);
@@ -204,3 +205,91 @@
 .card-food-img img {
     width: 230px;
 }
+/* About section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-content {
+    text-align: -webkit-center;
+}
+.about-content span {
+    font-size: large;
+    font-weight: 700;
+    color: orange;
+}
+.about-content h3 {
+    font-size: 50px;
+    font-family: sans-serif;
+    width: 437px;
+    margin: 10px;
+}
+.about-content p {
+    width: 300px;
+    font-size: 17px;
+    color: gray;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-content a {
+    color: white;
+    margin-left: 15px;
+    padding: 16px 25px 16px 25px;
+    background-color: rgb(255, 128, 0);
+    text-decoration: none;
+}
+
+/* Popular section */
+.popular-container {
+    background-color: #f4f1ea;
+}
+.popular-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.popular-top {
+    display: flex;
+    justify-content: center;
+}
+.popular-card {
+    width: 185px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 19px;
+    background-color: white;
+ 
+}
+.popular-card img {
+    width: 158px;
+    height: 158px;
+}
+.popular-card h4 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.popular-card h5 {
+    color: grey;
+    margin: -3px;
+    font-size: 16px;
+}
+.popular-card p {
+    font-size: 16px;
+    font-family: "Maven Pro", sans-serif;
+    color: red;
+    font-weight: 800;
+}
+.popular-card:hover {
+    background-color: #fd7e14;
+}
+.popular-card:hover h5,
+.popular-card:hover h4,
+.popular-card:hover p {
+    color: white;
+}
+
